@@ -1,0 +1,10 @@
+Import('env')
+
+# src_list = ["register_types.cpp", "bullet_pooler.cpp"]
+# env.add_source_files(env.modules_sources, src_list)
+
+# Add all cpp files to the build
+env.add_source_files(env.modules_sources, "*.cpp")
+
+# env.Append(CPPPATH=["mylib/include"])  # this is a relative path
+# env.Append(CPPPATH=["#myotherlib/include"])  # this is an 'absolute' path
